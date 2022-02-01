@@ -9,7 +9,8 @@ Modified (new) version of **nethunter** and **kex**
 
 2.Copy to location mentioned below and set permission.
   nethunter.sh to /data/data/com.termux/files/usr/bin
-  kex.sh to /usr/bin (directory of user : kali)
+  
+kex.sh to /usr/bin (directory of user : kali)
 
 3.**chmod +x nethunter** in termux.
   **chmod +x kex** in kali command line .
