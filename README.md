@@ -29,8 +29,8 @@ Usage : # In termux
 
         # Inside kali command line 
 
-        ┌──(kali㉿localhost)-[~]
-└─$kex < option >
+        ┌──(kali㉿localhost)-[~]└─
+        $ kex <option>
 
 ### nethunter.sh 
 
@@ -46,7 +46,10 @@ Example :$nethunter
 
  ┌──(kali㉿localhost)-[~]
 └─$
-![Screenshot](https://github.com/AioonT/kex/blob/main/.jpg?raw=true)
+
+----------------------------------------------------------------------------------------
+
+![Screenshot](image.jpg)
 ![This is an image](https://www.kali.org/docs/nethunter/nethunter-rootless/010-NH-Rootless-Installation_Start_s.png)
 
 Kali rootless : https://www.kali.org/docs/nethunter/nethunter-rootless/
