@@ -30,7 +30,7 @@ To reset kex by deleting files ~/.vnc/passwd: kex reset
 
 Example of successful kex running :
 
-*[File name : kex  location : /data/data/com.termux/files/home/kali-arm64/usr/bin or /usr/bin in kali ] <if you need edit it do it carefully!>
+[File name : kex  location : /data/data/com.termux/files/home/kali-arm64/usr/bin or /usr/bin in kali ] <if you need edit it do it carefully!>
 
 +=====***   KEX MENU   ***=====+
 
@@ -51,4 +51,6 @@ In kali cmd (after type nethunter in termux)
 TigerVNC server sessions:
 
 X DISPLAY #     RFB PORT #      PROCESS ID      SERVER
-:2            5902            32064           Xtigervnc*
+:2            5902            32064           Xtigervnc
+
+
