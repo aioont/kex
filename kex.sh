@@ -43,7 +43,7 @@ vnc_restart() {
      cd ~/.vnc/
      rm -rf *.log *.pid
      cd /
-     rm -rf /tmp/.X* /tmp/.xfsm* /tmp/.l2s /tmp/.ICE-unix
+     rm -rf /tmp/.X* /tmp/.xfsm* /tmp/.l2s* /tmp/.ICE-unix
      vnc_stop
      vnc_start
      vnc_status
@@ -53,7 +53,7 @@ vnc_reset() {
      cd ~/.vnc/
      rm -rf *.log *.pid
      cd /
-     rm -rf /tmp/.X* /tmp/.xfsm* /tmp/.l2s /tmp/.ICE-unix
+     rm -rf /tmp/.X* /tmp/.xfsm* /tmp/.l2s* /tmp/.ICE-unix
 echo "Cleaned files.New User : "
      vnc_passwd
 }
