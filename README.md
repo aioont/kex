@@ -8,9 +8,9 @@ Run command from termux :
 
 1.Download nethunter.sh and kex.sh
 
-`https://raw.githubusercontent.com/AioonT/kex/main/kex.sh`
+`wget https://raw.githubusercontent.com/AioonT/kex/main/kex.sh`
 
-`https://raw.githubusercontent.com/AioonT/kex/main/nethunter.sh`
+`wget https://raw.githubusercontent.com/AioonT/kex/main/nethunter.sh`
 
 2.Setup permission
 
@@ -22,11 +22,11 @@ Run command from termux :
 
 nethunter.sh to /data/data/com.termux/files/usr/bin
 
-`mv nethunter.sh data/data/com.termux/files/usr/bin`
+`mv nethunter.sh nethunter && mv nethunter /data/data/com.termux/files/usr/bin`
 
 kex.sh to /usr/bin (directory of user : kali)
 
-`mv kex.sh /data/data/com.termux/files/home/kali-arm64/usr/bin`
+`mv kex.sh kex && mv kex /data/data/com.termux/files/home/kali-arm64/usr/bin`
 
 _____________________________________________________________________
 
