@@ -31,7 +31,7 @@ vnc_passwd() {
         echo "$session_list"
     else
         echo "There is nothing to list :)"
-        echo "You can start a new session by << vnc start >> after typing <<  nethunter  >>"
+        echo "You can start a new session by <<  vncserver -depth 24 -geometry 1920x1080 :1  >> after typing <<  nethunter  >>"
     fi
 }
                                                                                                 vnc_kill() {
