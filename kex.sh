@@ -64,6 +64,7 @@ function ask() {
     case $REPLY in
         [Yy]* )
               vnc_restart
+     vncserver -depth 24 -geometry 1920x1080 :1
               ;;
         [Nn]* )
               exit
