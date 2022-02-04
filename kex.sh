@@ -11,13 +11,13 @@ vnc_start() {                                                                   
     if [ $USR = "root" ]; then
         SCR=:1
     else
-        SCR=:2
+        SCR=:3
     fi
     export USER=$USR; LD_PRELOAD=$LIBGCCPATH/libgcc_s.so.1 nohup vncserver $SCR >/dev/null 2>&1 </dev/null
 }
 
 vnc_stop() {                                                                                        vncserver -kill :1
-    vncserver -kill :2
+    vncserver -kill :*
     return $?
 }
 
@@ -80,6 +80,7 @@ case "$1" in
     start)
         vnc_start
         vnc_status
+        echo -e "\nIf you can't see PROCESS_ID or showing (stale) change SCR:2 to SCR:Any_Number"
         ;;
     stop)
         vnc_stop
