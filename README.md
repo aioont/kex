@@ -1,21 +1,46 @@
 ***Nethunter & kex***
 
-Modified (new) version of **nethunter** and **kex** 
 
 ### How Fix kex error
 ### No matching vnc server,no session,black screen,etc.
 
+Run command from termux :
+
 1.Download nethunter.sh and kex.sh
 
-2.Copy to location mentioned below and set permission.
-  nethunter.sh to /data/data/com.termux/files/usr/bin
-  
+`https://raw.githubusercontent.com/AioonT/kex/main/kex.sh`
+
+`https://raw.githubusercontent.com/AioonT/kex/main/nethunter.sh`
+
+2.Setup permission
+
+`chmod +x kex.sh`
+
+`chmod +x nethunter.sh`
+
+3.Move files
+
+nethunter.sh to /data/data/com.termux/files/usr/bin
+
+`mv nethunter.sh data/data/com.termux/files/usr/bin`
+
 kex.sh to /usr/bin (directory of user : kali)
 
-3.**chmod +x nethunter** in termux.
-  **chmod +x kex** in kali command line .
+`mv nethunter.sh /data/data/com.termux/files/home/kali-arm64/usr/bin`
 
+_____________________________________________________________________
+5.Commands
+ `nethunter kex start` #To start 
 
+ `nethunter kex stop` #To stop
+
+ `nethunter kex status` #To show status
+
+ `nethunter kex restart` #To fix errors by removing some files
+
+ `nethunter kex reset` #To delete some files and vnc user (.passwd fille of vnc)
+ 
+________________________________________________________________________________
 
 Audience: People who use Kali nethunter rootless - Android (also all kex user) 
 
@@ -53,7 +78,9 @@ Example :$nethunter
  ┌──(kali㉿localhost)-[~]
 └─$
 
-----------------------------------------------------------------------------------------
+
+Modified (new) version of **nethunter** and **kex** 
+_________________________________________________________________________________
 
 ![Screenshot](image.jpg)
 ![This is an image](https://www.kali.org/docs/nethunter/nethunter-rootless/010-NH-Rootless-Installation_Start_s.png)
