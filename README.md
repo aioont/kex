@@ -26,10 +26,12 @@ nethunter.sh to /data/data/com.termux/files/usr/bin
 
 kex.sh to /usr/bin (directory of user : kali)
 
-`mv nethunter.sh /data/data/com.termux/files/home/kali-arm64/usr/bin`
+`mv kex.sh /data/data/com.termux/files/home/kali-arm64/usr/bin`
 
 _____________________________________________________________________
+
 5.Commands
+
  `nethunter kex start` #To start 
 
  `nethunter kex stop` #To stop
