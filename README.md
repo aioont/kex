@@ -8,9 +8,9 @@ Run command from termux :
 
 1.Download nethunter.sh and kex.sh
 
-`wget https://raw.githubusercontent.com/AioonT/kex/main/kex.sh`
+`wget https://raw.githubusercontent.com/aioont/kex/main/kex.sh`
 
-`wget https://raw.githubusercontent.com/AioonT/kex/main/nethunter.sh`
+`wget https://raw.githubusercontent.com/aioont/kex/main/nethunter.sh`
 
 2.Setup permission
 
