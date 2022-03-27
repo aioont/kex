@@ -82,7 +82,7 @@ case "$1" in
     start)
         vnc_start
         vnc_status
-        echo -e "\nIf you can't see PROCESS_ID or showing (stale) change SCR:2 to SCR:Any_Numberb in /use/bin/kex\n"
+        echo -e "\nIf you can't see PROCESS_ID or showing (stale) change SCR:2 to SCR:Any_Number in /use/bin/kex\n"
         ;;
     stop)
         vnc_stop
