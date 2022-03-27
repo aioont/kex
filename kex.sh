@@ -3,21 +3,20 @@ echo -e "[File name : kex  location : /data/data/com.termux/files/home/kali-arm6
 \n+=====***   KEX MENU   ***=====+\n\nTermux home : \n\tUsage : nethunter kex <option>\n\t<option> :   start    stop    status   kill ->(chance of error due to proc not mounted)                     restart reset \n\tExample : nethunter kex start"
 echo -e "\n\nIn kali cmd (after type nethunter in termux) \n\tUsage: kex <option>\n\t<option> :   start    stop    status   kill ->(chance of error due to proc not mounted)                    restart reset \n\tExample ┌──(kali㉿localhost)-[~] └─$ :  kex start \n** start Kali NetHunter cli as root is not recommended in this script  \n\n=============================================================================================="
 
-
-vnc_start() {                                                                                       
-if [ ! -f ~/.vnc/passwd ]; then
+vnc_start() {
+    if [ ! -f ~/.vnc/passwd ]; then
         vnc_passwd
     fi
     USR=$(whoami)
     if [ $USR = "root" ]; then
         SCR=:1
     else
-        SCR=:3
+        SCR=:2
     fi
-    export USER=$USR; LD_PRELOAD=$LIBGCCPATH/libgcc_s.so.1 nohup vncserver $SCR >/dev/null 2>&1 </dev/null
+    export USER=$USR; LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgcc_s.so.1 nohup vncserver $SCR >/dev/null 2>&1 </dev/null
 }
 
-vnc_stop() {                                                                                        
+vnc_stop() {
     vncserver -kill :*
     return $?
 }
@@ -26,7 +25,7 @@ vnc_passwd() {
     vncpasswd
     return $?
 }
-                                                                                                
+
 vnc_status() {
     session_list=$(vncserver -list)
     if [[ $session_list == *"590"* ]]; then
@@ -36,10 +35,10 @@ vnc_status() {
         echo "You can start a new session by <<  vncserver -depth 24 -geometry 1920x1080 :1  >> after typing <<  nethunter  >>"
     fi
 }
-                                                                                               
+
  vnc_kill() {
     pkill Xtigervnc
-    return \$?
+    return $?
 }
 
 vnc_restart() {
@@ -83,7 +82,7 @@ case "$1" in
     start)
         vnc_start
         vnc_status
-        echo -e "\nIf you can't see PROCESS_ID or showing (stale) change SCR:2 to SCR:Any_Number in /use/bin/kex\n"
+        echo -e "\nIf you can't see PROCESS_ID or showing (stale) change SCR:2 to SCR:Any_Numberb in /use/bin/kex\n"
         ;;
     stop)
         vnc_stop
