@@ -97,3 +97,7 @@ i.Possible kex error due to updating which remove necessary files for kex becaus
 
 ii.Deletion of configuration files like xstartup
 
+
+•   To fix ready only filesystem when trying to remove /tmp/.X11-unix
+
+`umount /tmp/.X11-unix`
