@@ -1,5 +1,6 @@
-***Nethunter & kex***
-
+```diff
+- Nethunter & kex - Please read readme file to get full overview. This file explains fix for both kali nethunter kex and Win-kex
+```
 
 ### How Fix kex error
 ### No matching vnc server,no session,black screen,etc.
@@ -42,6 +43,19 @@ _____________________________________________________________________
 
  `nethunter kex reset` #To delete some files and vnc user (.passwd fille of vnc)
  
+________________________________________________________________________________
+```diff
++ For Win Kex Users (Windows subsystem)
+
++ To fix ready only filesystem when trying to remove /tmp/.X11-unix , unmount it by command given below : 
++ Run command below manually and then run program or script ( Follow step 5.Commands)
+```
+`umount /tmp/.X11-unix`
+
+
+
+
+
 ________________________________________________________________________________
 
 Audience: People who use Kali nethunter rootless - Android (also all kex user) 
@@ -98,6 +112,6 @@ i.Possible kex error due to updating which remove necessary files for kex becaus
 ii.Deletion of configuration files like xstartup
 
 
-•   To fix ready only filesystem when trying to remove /tmp/.X11-unix
-
-`umount /tmp/.X11-unix`
+```diff
+@@ Your feedback is highly appreciated and star this repo if it is helpful.Have a good day :) @@
+```
