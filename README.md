@@ -7,24 +7,25 @@
 
 Run command from termux :
 
-1.Download nethunter.sh and kex.sh
+#### 1.Download nethunter.sh and kex.sh
 
 `wget https://raw.githubusercontent.com/aioont/kex/main/kex.sh`
 
 `wget https://raw.githubusercontent.com/aioont/kex/main/nethunter.sh`
 
 or
-`git clone https://github.com/aioont/kex.git
-cd kex
-`
 
-2.Setup permission
+`git clone https://github.com/aioont/kex.git`
+
+`cd kex`
+
+#### 2.Setup permission
 
 `chmod +x kex.sh`
 
 `chmod +x nethunter.sh`
 
-3.Move files
+#### 3.Move files
 
 nethunter.sh to /data/data/com.termux/files/usr/bin
 
@@ -36,7 +37,7 @@ kex.sh to /usr/bin (directory of user : kali)
 
 _____________________________________________________________________
 
-5.Commands
+#### 4.Commands
 
  `nethunter kex start` #To start 
 
