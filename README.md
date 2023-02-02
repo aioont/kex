@@ -13,6 +13,11 @@ Run command from termux :
 
 `wget https://raw.githubusercontent.com/aioont/kex/main/nethunter.sh`
 
+or
+`git clone https://github.com/aioont/kex.git
+cd kex
+`
+
 2.Setup permission
 
 `chmod +x kex.sh`
